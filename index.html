@@ -1,1 +1,146 @@
-<h1>Hola mundo</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beneficios Exclusivos</title>
+
+<style>
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#f5f5f7;
+color:#1d1d1f;
+display:flex;
+align-items:center;
+justify-content:center;
+min-height:100vh;
+}
+
+.container{
+max-width:700px;
+width:90%;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 20px 60px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+h1{
+font-size:36px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.subtitle{
+color:#6e6e73;
+font-size:18px;
+margin-bottom:35px;
+}
+
+.benefit{
+display:flex;
+align-items:flex-start;
+gap:15px;
+padding:20px;
+border-radius:14px;
+margin-bottom:15px;
+background:#fafafa;
+transition:all .25s ease;
+}
+
+.benefit:hover{
+background:#f0f0f0;
+transform:translateY(-2px);
+}
+
+.icon{
+font-size:24px;
+}
+
+.text{
+text-align:left;
+}
+
+.text strong{
+display:block;
+font-size:17px;
+margin-bottom:3px;
+}
+
+.text span{
+color:#6e6e73;
+font-size:15px;
+}
+
+.footer{
+margin-top:35px;
+font-size:14px;
+color:#86868b;
+}
+
+@media (max-width:600px){
+
+.container{
+padding:28px;
+}
+
+h1{
+font-size:28px;
+}
+
+.subtitle{
+font-size:16px;
+}
+
+.benefit{
+padding:16px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Beneficios Exclusivos</h1>
+<p class="subtitle">Escanea este código QR y disfruta de tus beneficios</p>
+
+<div class="benefit">
+<div class="icon">⚡</div>
+<div class="text">
+<strong>Prioridad absoluta</strong>
+<span>Atención inmediata ante cualquier servicio de reparación.</span>
+</div>
+</div>
+
+<div class="benefit">
+<div class="icon">🧩</div>
+<div class="text">
+<strong>20% de descuento</strong>
+<span>En accesorios como cargadores, protectores y cables.</span>
+</div>
+</div>
+
+<div class="benefit">
+<div class="icon">📱</div>
+<div class="text">
+<strong>10% de descuento</strong>
+<span>En la compra de un nuevo dispositivo.</span>
+</div>
+</div>
+
+<div class="footer">
+Beneficio válido al presentar este QR
+</div>
+
+</div>
+
+</body>
+</html>
