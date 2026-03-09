@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Tarjeta VIP</title>
+<title>ACCECELL R - Tarjeta VIP</title>
 
 <style>
 
@@ -16,7 +16,7 @@ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,s
 }
 
 body{
-background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+background: linear-gradient(135deg,#141E30,#243B55);
 min-height:100vh;
 display:flex;
 justify-content:center;
@@ -29,33 +29,40 @@ color:white;
 max-width:750px;
 width:100%;
 background:rgba(255,255,255,0.08);
-backdrop-filter:blur(15px);
+backdrop-filter:blur(14px);
 border-radius:25px;
-padding:40px;
-box-shadow:0 25px 60px rgba(0,0,0,0.35);
+padding:45px;
+box-shadow:0 25px 70px rgba(0,0,0,0.35);
 text-align:center;
 animation:fade 1s ease;
 }
 
 @keyframes fade{
-from{opacity:0; transform:translateY(20px);}
+from{opacity:0; transform:translateY(25px);}
 to{opacity:1; transform:translateY(0);}
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+letter-spacing:2px;
+margin-bottom:10px;
 }
 
 .badge{
 display:inline-block;
 background:linear-gradient(45deg,#FFD700,#FFA500);
 color:black;
-padding:6px 16px;
+padding:6px 18px;
 border-radius:30px;
 font-size:13px;
 font-weight:600;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 h1{
-font-size:36px;
-margin-bottom:10px;
+font-size:34px;
+margin-bottom:12px;
 }
 
 .subtitle{
@@ -66,7 +73,6 @@ font-size:18px;
 
 .benefits{
 display:grid;
-grid-template-columns:1fr;
 gap:18px;
 }
 
@@ -82,7 +88,7 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
 background:rgba(255,255,255,0.18);
 }
 
@@ -109,11 +115,11 @@ opacity:0.8;
 @media (max-width:600px){
 
 .container{
-padding:28px;
+padding:30px;
 }
 
 h1{
-font-size:28px;
+font-size:26px;
 }
 
 .subtitle{
@@ -134,13 +140,15 @@ padding:18px;
 
 <div class="container">
 
-<div class="badge">TARJETA VIP</div>
+<div class="logo">ACCECELL R</div>
+
+<div class="badge">CLIENTE VIP</div>
 
 <h1>¡Bienvenido!</h1>
 
 <p class="subtitle">
-Gracias por ser parte de nuestros clientes VIP.  
-Con tu tarjeta exclusiva puedes disfrutar de los siguientes beneficios especiales.
+Gracias por confiar en <strong>ACCECELL R</strong>.  
+Tu tarjeta VIP te brinda beneficios exclusivos diseñados para ofrecerte una mejor experiencia.
 </p>
 
 <div class="benefits">
@@ -149,7 +157,7 @@ Con tu tarjeta exclusiva puedes disfrutar de los siguientes beneficios especiale
 <div class="icon">⚡</div>
 <div>
 <h3>Prioridad absoluta</h3>
-<p>Atención prioritaria en cualquier servicio de reparación de tu dispositivo.</p>
+<p>Atención prioritaria ante cualquier servicio de reparación de tu dispositivo.</p>
 </div>
 </div>
 
@@ -172,8 +180,7 @@ Con tu tarjeta exclusiva puedes disfrutar de los siguientes beneficios especiale
 </div>
 
 <div class="footer">
-Gracias por confiar en nuestro servicio.  
-Disfruta tus beneficios VIP.
+ACCECELL R • Tecnología y servicio de confianza
 </div>
 
 </div>
