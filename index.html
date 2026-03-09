@@ -4,82 +4,106 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Beneficios Exclusivos</title>
+<title>Tarjeta VIP</title>
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-background:#f5f5f7;
-color:#1d1d1f;
-display:flex;
-align-items:center;
-justify-content:center;
+}
+
+body{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+color:white;
 }
 
 .container{
-max-width:700px;
-width:90%;
-background:white;
+max-width:750px;
+width:100%;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-radius:25px;
 padding:40px;
-border-radius:20px;
-box-shadow:0 20px 60px rgba(0,0,0,0.08);
+box-shadow:0 25px 60px rgba(0,0,0,0.35);
 text-align:center;
+animation:fade 1s ease;
+}
+
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+.badge{
+display:inline-block;
+background:linear-gradient(45deg,#FFD700,#FFA500);
+color:black;
+padding:6px 16px;
+border-radius:30px;
+font-size:13px;
+font-weight:600;
+margin-bottom:15px;
 }
 
 h1{
 font-size:36px;
-font-weight:600;
 margin-bottom:10px;
 }
 
 .subtitle{
-color:#6e6e73;
-font-size:18px;
+opacity:0.9;
 margin-bottom:35px;
+font-size:18px;
 }
 
-.benefit{
+.benefits{
+display:grid;
+grid-template-columns:1fr;
+gap:18px;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+padding:22px;
+border-radius:18px;
 display:flex;
 align-items:flex-start;
 gap:15px;
-padding:20px;
-border-radius:14px;
-margin-bottom:15px;
-background:#fafafa;
-transition:all .25s ease;
+text-align:left;
+transition:0.3s;
 }
 
-.benefit:hover{
-background:#f0f0f0;
-transform:translateY(-2px);
+.card:hover{
+transform:translateY(-5px);
+background:rgba(255,255,255,0.18);
 }
 
 .icon{
-font-size:24px;
+font-size:28px;
 }
 
-.text{
-text-align:left;
+.card h3{
+font-size:18px;
+margin-bottom:4px;
 }
 
-.text strong{
-display:block;
-font-size:17px;
-margin-bottom:3px;
-}
-
-.text span{
-color:#6e6e73;
+.card p{
 font-size:15px;
+opacity:0.9;
 }
 
 .footer{
 margin-top:35px;
 font-size:14px;
-color:#86868b;
+opacity:0.8;
 }
 
 @media (max-width:600px){
@@ -96,48 +120,60 @@ font-size:28px;
 font-size:16px;
 }
 
-.benefit{
-padding:16px;
+.card{
+padding:18px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Beneficios Exclusivos</h1>
-<p class="subtitle">Escanea este código QR y disfruta de tus beneficios</p>
+<div class="badge">TARJETA VIP</div>
 
-<div class="benefit">
+<h1>¡Bienvenido!</h1>
+
+<p class="subtitle">
+Gracias por ser parte de nuestros clientes VIP.  
+Con tu tarjeta exclusiva puedes disfrutar de los siguientes beneficios especiales.
+</p>
+
+<div class="benefits">
+
+<div class="card">
 <div class="icon">⚡</div>
-<div class="text">
-<strong>Prioridad absoluta</strong>
-<span>Atención inmediata ante cualquier servicio de reparación.</span>
+<div>
+<h3>Prioridad absoluta</h3>
+<p>Atención prioritaria en cualquier servicio de reparación de tu dispositivo.</p>
 </div>
 </div>
 
-<div class="benefit">
-<div class="icon">🧩</div>
-<div class="text">
-<strong>20% de descuento</strong>
-<span>En accesorios como cargadores, protectores y cables.</span>
+<div class="card">
+<div class="icon">🛍</div>
+<div>
+<h3>20% de descuento</h3>
+<p>En accesorios como cargadores, protectores de pantalla y cables.</p>
 </div>
 </div>
 
-<div class="benefit">
+<div class="card">
 <div class="icon">📱</div>
-<div class="text">
-<strong>10% de descuento</strong>
-<span>En la compra de un nuevo dispositivo.</span>
+<div>
+<h3>10% de descuento</h3>
+<p>En la compra de un nuevo dispositivo en nuestra tienda.</p>
 </div>
+</div>
+
 </div>
 
 <div class="footer">
-Beneficio válido al presentar este QR
+Gracias por confiar en nuestro servicio.  
+Disfruta tus beneficios VIP.
 </div>
 
 </div>
